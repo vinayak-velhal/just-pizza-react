@@ -1,0 +1,45 @@
+.row {
+    height: 100%;
+}
+
+.row .pizza-left-img {
+    background: url("/pizzaLeft.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#form-div {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form button {
+    width: 25%;
+}
+
+@media (max-width: 767px) {
+    #form-div {
+        position: absolute;
+        height: 70%;
+        margin-top: 3px;
+    }
+
+    form {
+        width: 75%;
+        background-color: rgba(248, 249, 250, 0.4);
+        border: 1px solid #6c757d;
+        border-radius: 6px;
+        padding: 20px;
+        box-shadow: 1px 1px 20px 0.5px hsla(0, 0%, 30%, 0.5);
+    }
+
+    form button {
+        width: 100%;
+    }
+}
